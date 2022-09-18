@@ -1,0 +1,25 @@
+#include<stdio.h>
+
+int main()
+{
+int num ,rem,q,result=0;
+
+printf("enter a number to be checked:");
+scanf("%d",&num);
+ q=num;
+ 
+ while(q>0)
+ {
+  rem=q%10; //dividing any number by 10 will give the last digit as remaider and other digits as qutionet(eg 123%10 = 3 & 123/10 =12//
+  result= result*10+rem; //0+3,(3*10+2),(32*10+1)//
+  q= q/10;//123/10=12,12/10=1//
+}
+if(result==num)
+{ 
+printf("the number is a palindrome");
+}
+else
+{ printf("the number is not a palindrome");
+}
+return 0;
+}
