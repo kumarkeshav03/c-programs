@@ -1,4 +1,4 @@
-// program to print a array of stars
+// program to print a array of stars using nested loops
 #include <stdio.h>
 
 int main() {
@@ -9,11 +9,12 @@ int main() {
     printf("enter the numbwer of columns:");
     scanf("%d",&col);
     
+    
     for (i=0;i<=row;i++){
         for(j=0;j<=col;j++){
             printf("*");
         }
-            printf("\n");
+            printf("\n"); // his will make to print the stars in new line so that not all the starts ar pinted in same line
         
     }
         
